@@ -17,7 +17,7 @@ function initCannon() {
 	});
 	body.addShape(shape);
 	body.angularVelocity.set(10, 10, 10);
-	body.angularDamping = 0;
+	body.angularDamping = 0.5;
 	world.addBody(body);
 }
 
@@ -28,7 +28,7 @@ function initThree() {
 	camera.position.z = 5;
 	scene.add(camera);
 
-	geometry = new THREE.BoxGeometry(2, 2, 2);
+	geometry = new THREE.BoxGeometry(2, 0.1, 2);
 	material = new THREE.MeshBasicMaterial({
 		color: 0xA1662F,
 		wireframe: false
