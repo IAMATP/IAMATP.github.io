@@ -1,6 +1,3 @@
-import * as THREE from 'assets/Three.js';
-import * as CANNON from 'assets/Cannon.js';
-
 var world, mass, body, shape, timeStep=1/60,
          camera, scene, renderer, geometry, material, mesh;
 
