@@ -6,7 +6,7 @@ animate();
 
 function initCannon() {
 	world = new CANNON.World();
-	world.gravity.set(0, 0, 0);
+	world.gravity.set(0, 0, 9.807);
 	world.broadphase = new CANNON.NaiveBroadphase();
 	world.solver.iterations = 10;
 
