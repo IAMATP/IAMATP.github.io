@@ -25,7 +25,8 @@ function initThree() {
 	scene = new THREE.Scene();
 
 	camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 100);
-	camera.position.z = 5;
+	camera.position.y = 5;
+	camera.lookAt(0, 0, 0)
 	scene.add(camera);
 
 	geometry = new THREE.BoxGeometry(2, 0.1, 2);
