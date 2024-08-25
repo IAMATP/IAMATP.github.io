@@ -1,5 +1,4 @@
-var world, mass, body, shape, timeStep = 1 / 60,
-	camera, scene, renderer, geometry, material, mesh;
+var world, mass, body, shape, timeStep = 1 / 60, camera, scene, renderer, geometry, material, mesh;
 
 initThree();
 initCannon();
@@ -17,7 +16,7 @@ function initCannon() {
 		mass: 1
 	});
 	body.addShape(shape);
-	body.angularVelocity.set(0, 10, 0);
+	body.angularVelocity.set(10, 10, 10);
 	body.angularDamping = 0.5;
 	world.addBody(body);
 }
@@ -31,8 +30,8 @@ function initThree() {
 
 	geometry = new THREE.BoxGeometry(2, 2, 2);
 	material = new THREE.MeshBasicMaterial({
-		color: 0xff0000,
-		wireframe: true
+		color: 0xA1662F,
+		wireframe: false
 	});
 
 	mesh = new THREE.Mesh(geometry, material);
