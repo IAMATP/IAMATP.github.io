@@ -17,7 +17,7 @@ function initCannon() {
 	});
 	body.addShape(shape);
 	body.angularVelocity.set(10, 10, 10);
-	body.angularDamping = 0.5;
+	body.angularDamping = 0;
 	world.addBody(body);
 }
 
