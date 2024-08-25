@@ -1,4 +1,6 @@
-var world, mass, body, shape, timeStep=1/60,
+
+
+      var world, mass, body, shape, timeStep=1/60,
          camera, scene, renderer, geometry, material, mesh;
 
       initThree();
