@@ -1,2 +1,2 @@
 # IAMATP
-Small game made with cannon.js
+Multipurpose website
