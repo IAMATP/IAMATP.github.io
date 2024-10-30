@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Unlimited Parkour</title>
-    <style>
-      * {
-        margin:0;
-        padding:0
-      }
-      body {
-        overflow:hidden;
-      }
-    </style>
+    <title>Spam</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <script>function Spam(){
+    var params= {
+        subject: 'Gotcha',
+        message: document.getElementById("ph").value,
+
+    }
+
+    const serviceID  = 'service_vmfh0nf';
+    const templateID = 'template_yzyvuq2';
+
+emailjs.send(serviceID, templateID, params)</script>
   </head>
   <body>
-    <script src="gameengine.js"></script>
+    <textarea id="ph">You're certainly not a good hacker!</textarea>
+    <button onclick="Spam"></button>
   </body>
 </html>
