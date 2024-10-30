@@ -2,18 +2,26 @@
 <html>
   <head>
     <title>Spam</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    <script>function Spam(){
-    var params= {
-        subject: 'Gotcha',
-        message: document.getElementById("ph").value,
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      function Spam() {
+        var params = {
+          subject: 'Gotcha',
+          message: document.getElementById("ph").value,
+        };
 
-    }
+        const serviceID = 'service_vmfh0nf';
+        const templateID = 'template_yzyvuq2';
 
-    const serviceID  = 'service_vmfh0nf';
-    const templateID = 'template_yzyvuq2';
-
-emailjs.send(serviceID, templateID, params); console.log("done")</script>
+        emailjs.send(serviceID, templateID, params)
+          .then(response => {
+            console.log("Email sent successfully", response.status, response.text);
+          })
+          .catch(error => {
+            console.error("Error sending email", error);
+          });
+      }
+    </script>
   </head>
   <body>
     <textarea id="ph">You're certainly not a good hacker!</textarea>
