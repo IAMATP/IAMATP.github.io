@@ -13,7 +13,7 @@
     <script>
       function Spam() {
         var params = {
-          subject: 'Gotcha',
+          subject: document.getElementById("head").value;
           message: document.getElementById("ph").value,
         };
 
@@ -31,7 +31,8 @@
     </script>
   </head>
   <body>
-    <textarea id="ph">You're certainly not a good hacker!</textarea>
+    <textarea id="head">Head</textarea>
+    <textarea id="ph">Body</textarea>
     <button onclick="Spam()">Spam the hacker</button>
   </body>
 </html>
