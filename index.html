@@ -1,38 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Spam</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-        emailjs.init({
-        publicKey: "fh3XLa_FMG7FGEdNW",
-        });
-        })();
-    </script>
-    <script>
-      function Spam() {
-        var params = {
-          subject: document.getElementById("head").value,
-          message: document.getElementById("ph").value,
-        };
-
-        const serviceID = 'service_kpyoj4a';
-        const templateID = 'template_cluzz8v';
-
-        emailjs.send(serviceID, templateID, params)
-          .then(response => {
-            console.log("Email sent successfully", response.status, response.text);
-          })
-          .catch(error => {
-            console.error("Error sending email", error);
-          });
-      }
-    </script>
+    <title>Testing</title>
   </head>
   <body>
-    <textarea id="head">Head</textarea>
-    <textarea id="ph">Body</textarea>
-    <button onclick="Spam()">Spam the hacker</button>
+    <iframe data-aa='2367937' src='//ad.a-ads.com/2367937?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
   </body>
 </html>
